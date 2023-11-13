@@ -1,4 +1,4 @@
-import Login from "./pages/login/index3";
+import Login from "./pages/login/index";
 import Home from "./pages/home";
 import Register from "./pages/register/index3";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"

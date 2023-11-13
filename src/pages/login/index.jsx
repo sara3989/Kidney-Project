@@ -18,6 +18,7 @@ const Login = () => {
   //   // useToken.saveToken(data);
   //   console.log(data)
   // };
+  console.log("login function");
     const navigate = useNavigate();
 
   const {login} = useContext(AuthContext)

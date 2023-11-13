@@ -42,7 +42,7 @@ function Copyright(props) {
 const theme = createTheme();
 const Register = () => {
   
-    const [firstName,setFirstName]=useState("");
+    const [userName,setUserName]=useState("");
     const [lastName,setLastName]=useState("");
     const [email,setEmail]=useState("");
     const [city,setCity]=useState("");
@@ -62,7 +62,7 @@ const Register = () => {
       setErr("");
       e.preventDefault();
       try{
-        const res= await axios.post("http://localhost:3600/api/auth/register",{firstName,lastName,email,city,dateOfBirth,address,id,phone,watsup,password,role});
+        const res= await axios.post("http://localhost:3600/api/auth/register",{userName,lastName,email,city,dateOfBirth,address,id,phone,watsup,password,role});
    
          console.log("after await");
          console.log(res.data);
@@ -118,7 +118,7 @@ const Register = () => {
                   name="firstName"
                   required
                   fullWidth
-                  onChange={(e) => { setFirstName(e.target.value) }}
+                  onChange={(e) => { setUserName(e.target.value) }}
                   id="firstName"
                   label="First Name"
                   autoFocus
